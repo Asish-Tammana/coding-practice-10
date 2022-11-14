@@ -47,7 +47,7 @@ const authenticationToken = (request, response, next) => {
   let jwToken;
   const authHeader = request.headers["authorization"];
 
-  if (authHeader != undefined) {
+  if (authHeader !== undefined) {
     jwToken = authHeader.split(" ")[1];
   }
 
